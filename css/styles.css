@@ -93,11 +93,29 @@ img {
 }
 
 .logo,
-.header-nav-link,
-.link-contact {
+.header-nav-link {
   display: block;
 
   cursor: pointer;
+}
+
+/* =========SVG======================== */
+
+.link-contact-icon:first-child {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+
+.icon-phone.link-contact-icon {
+  width: 10px;
+  height: 16px;
+}
+
+.link-contact:hover .link-contact-icon,
+.link-contact:focus .link-contact-icon {
+  fill: var(--button-blue-color);
 }
 
 .header-nav-contacts .header-list-contacts + .header-list-contacts {
@@ -131,10 +149,15 @@ img {
 }
 
 .link-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  cursor: pointer;
 }
 
 .header-nav-link:hover,
@@ -241,7 +264,7 @@ img {
 }
 
 .team-container {
-  padding: 30px 10px;
+  padding: 30px 32px;
 }
 
 .work-title,
@@ -269,6 +292,8 @@ img {
   font-weight: 400;
   font-size: 16px;
   text-align: center;
+
+  margin-bottom: 10px;
 }
 
 .team {
@@ -291,6 +316,36 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-list_item > .social-list_item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-white-color);
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+
+.social-list_item-link:hover,
+.social-list_item-link:focus {
+  background-color: var(--button-blue-color);
+}
+
+.social-list_item-link:hover .social-list-icon,
+.social-list_item-link:focus .social-list-icon {
+  fill: var(--primary-white-color);
+}
 /* ========END OUR WORKS AND TEAM=============== */
 
 /* ============PORTFOLIO=========================D */
